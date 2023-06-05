@@ -11,23 +11,23 @@ class CirculoTest {
     @Test
     void calcArea() {
         Circulo c = new Circulo(3.4);
-        assertTrue(c.calcArea() == (3.4*3.4)*Math.PI);
+        assertEquals((3.4*3.4)*Math.PI,c.calcArea());
         c.setRadio(0);
-        assertTrue(c.calcArea() == 0);
+        assertEquals(0,c.calcArea());
         c.setRadio(-1);
-        assertTrue(c.calcArea() == Math.PI );
+        assertEquals(Math.PI,c.calcArea());
     }
 
     @Test
     void getRadio() {
         Circulo c = new Circulo(3);
-        assertTrue(c.getRadio() == 3);
+        assertEquals(3,c.getRadio());
     }
 
     @Test
     void setRadio() {
         Circulo c = new Circulo(3);
         c.setRadio(4);
-        assertTrue(c.getRadio() == 4);
+        assertEquals(4,c.getRadio());
     }
 }
