@@ -1,2 +1,5 @@
-package com.example.junit_05062023.modelo;public interface IFigura {
+package com.example.junit_05062023.modelo;
+
+public interface IFigura {
+    public double calcArea();
 }
